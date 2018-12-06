@@ -1,0 +1,195 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Getting Started · Documents for Excel, .NET Edition</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="This topic incorporates:"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Getting Started · Documents for Excel, .NET Edition"/><meta property="og:type" content="website"/><meta property="og:url" content="https://your-docusaurus-test-site.com/gcdoctest/index.html"/><meta property="og:description" content="This topic incorporates:"/><meta property="og:image" content="https://your-docusaurus-test-site.com/gcdoctest/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://your-docusaurus-test-site.com/gcdoctest/img/docusaurus.png"/><link rel="shortcut icon" href="/gcdoctest/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://your-docusaurus-test-site.com/gcdoctest/blog/atom.xml" title="Documents for Excel, .NET Edition Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://your-docusaurus-test-site.com/gcdoctest/blog/feed.xml" title="Documents for Excel, .NET Edition Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="/gcdoctest/js/bcrumb.js"></script><script type="text/javascript" src="/gcdoctest/js/linksModifier.js"></script><link rel="stylesheet" href="/gcdoctest/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/gcdoctest/"><img class="logo" src="/gcdoctest/img/docusaurus.svg" alt="Documents for Excel, .NET Edition"/><h2 class="headerTitleWithLogo">Documents for Excel, .NET Edition</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/gcdoctest/docs/Overview" target="_self">Docs</a></li><li class=""><a href="https://dinoreborn.github.io/docfxsamplerepo/api/" target="_self">API</a></li><li class=""><a href="/gcdoctest/help" target="_self">Help</a></li><li class=""><a href="/gcdoctest/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Getting Started</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">GCPDF Overview</h3><ul><li class="navListItem"><a class="navItem" href="/gcdoctest/docs/Overview">Overview</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Key Features</h3><ul><li class="navListItem"><a class="navItem" href="/gcdoctest/docs/KeyFeatures">KeyFeatures</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting Started</h3><ul><li class="navListItem navListItemActive"><a class="navItem" href="/gcdoctest/docs/GettingStarted">Getting Started</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">My Example Subcategory</h4><ul><li class="navListItem"><a class="navItem" href="/gcdoctest/docs/QuickStart">Quick Start</a></li></ul></div><li class="navListItem"><a class="navItem" href="/gcdoctest/docs/LicenseInformation">License Information</a></li><li class="navListItem"><a class="navItem" href="/gcdoctest/docs/Upgrade">Upgrade</a></li><li class="navListItem"><a class="navItem" href="/gcdoctest/docs/Annotations">Annotations</a></li><li class="navListItem"><a class="navItem" href="/gcdoctest/docs/Document">Document</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docMainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/dinoreborn/gcdoctest/tree/master/docs/GettingStarted.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">Getting Started</h1></header><article><div><span><p>This topic incorporates:</p>
+<ul>
+<li><p><a href="http://help.grapecity.com/gcdocs/gcpdf/onlinehelp/GettingStarted.html#i-in-this-topic-f32cf590-8728-4311-91ab-d38bcac11971">System
+requirements</a></p></li>
+<li><p><a href="http://help.grapecity.com/gcdocs/gcpdf/onlinehelp/GettingStarted.html#i-in-this-topic-a5755b3a-62c1-4974-b2a0-8053101bcd82">Setting up an
+application</a></p></li>
+<li><p><a href="http://help.grapecity.com/gcdocs/gcpdf/onlinehelp/GettingStarted.html#i-in-this-topic-51ad7f94-9158-4eb9-a195-c4d9d5d51b26">Quick
+Start</a></p></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="system-requirements"></a><a href="#system-requirements" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>System requirements</h2>
+<ul>
+<li><p>.NET Standard 2.0</p></li>
+<li><p>Visual Studio 2017/Visual Studio for MAC/Visual Studio Code for Linux</p></li>
+</ul>
+<p>For OS versions supported in .NET Core 2.0, see <a href="https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md">.NET Core 2.0 - Supported OS
+versions</a>.</p>
+<h2><a class="anchor" aria-hidden="true" id="setting-up-an-application"></a><a href="#setting-up-an-application" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Setting up an application</h2>
+<p>GcPdf references are available through NuGet, a Visual Studio extension that
+adds the required libraries and references to your project automatically. To
+work with GcPdf, you need to have following references in your application:</p>
+<table>
+<thead>
+<tr><th>Reference</th><th>Purpose</th></tr>
+</thead>
+<tbody>
+<tr><td><a href="https://www.nuget.org/packages/GrapeCity.Documents.Pdf/">GrapeCity.Documents.Pdf</a></td><td>To use GcPdf in an application, you need to reference (install) just the GrapeCity.Documents.Pdf package. It will pull in the required infrastructure packages.</td></tr>
+<tr><td>GrapeCity.Documents.BarCode</td><td>To render barcodes, install the GrapeCity.Documents.Barcode (aka GcBarcode) package. It provides extension methods allowing to render barcodes when using GcPdf.</td></tr>
+<tr><td>GrapeCity.Documents.Common</td><td>GrapeCity.Documents.Common is an infrastructure package used by GcPdf and GcBarcode. You do not need to reference it directly.</td></tr>
+<tr><td>GrapeCity.Documents.Common.Windows</td><td>On a Windows system, you can optionally install GrapeCity.Documents.Common.Windows. It provides support for font linking specified in the Windows registry, and access to native Windows imaging APIs, improving performance and adding some features (e.g. TIFF support).</td></tr>
+<tr><td>GrapeCity.Documents.DX.Windows</td><td>GrapeCity.Documents.DX.Windows is an infrastructure package used by GrapeCity.Documents.Common.Windows. You do not need to reference it directly.</td></tr>
+</tbody>
+</table>
+<blockquote>
+<p>Note: There is a limitation of Xamarin iOS libraries that it does not
+provide System.Drawing.Color by default. Therefore, to use
+System.Drawing.Color with GcPdf on Xamarin.iOS, you need to add reference to
+OpenTK-1.0.</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="add-reference-to-gcpdf-in-your-application-from-nugetorg"></a><a href="#add-reference-to-gcpdf-in-your-application-from-nugetorg" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Add reference to GcPdf in your application from NuGet.org</h3>
+<p>In order to use GcPdf in a .NET Core, ASP.NET Core, .NET Framework application
+(any target that supports .NET Standard 2.0), install the NuGet packages in your
+application using the following steps:</p>
+<p>Visual Studio for Windows:</p>
+<ol>
+<li><p>Open Visual Studio for Windows.</p></li>
+<li><p>Create any application (any target that supports .NET Standard 2.0).</p></li>
+<li><p>Right-click the project in Solution Explorer and choose Manage NuGet
+Packages.</p></li>
+<li><p>In the Package source on top right, select nuget.org.</p></li>
+<li><p>Click Browse tab on top left and search for &quot;Grapecity.Documents&quot;.</p></li>
+<li><p>On the left panel, select GrapeCity.Documents.Pdf</p></li>
+<li><p>On the right panel, click Install.</p>
+<p><img src="../website/static/img/Nuget_Image.png" alt=""></p></li>
+<li><p>Choose <strong>Accept</strong> in the next screen.</p></li>
+<li><p>(Optional)If you want to add barcodes in your PDF file, you need to install
+the package <strong>GrapeCity.Documents.Barcode</strong> using the steps 5 to 8 above.</p></li>
+</ol>
+<p>This will add all the required references of the package to your application.
+After this step, follow the steps in the <a href="http://help.grapecity.com/gcdocs/gcpdf/onlinehelp/GettingStarted.html#QS">Quick
+Start</a> section
+below.</p>
+<p>Visual Studio for Mac</p>
+<ol>
+<li><p>Open Visual Studio for MAC.</p></li>
+<li><p>Create any application (any target that supports .NET Standard 2.0).</p></li>
+<li><p>In tree view on the left, right-click <strong>Dependencies</strong> and choose <strong>Add
+Packages</strong>.</p></li>
+<li><p>In the Search panel, type &quot;GrapeCity.Documents&quot;.</p></li>
+<li><p>From the list of packages displayed in the left panel, select
+<strong>GrapeCity.Documents.Pdf</strong> (and <strong>GrapeCity.Documents.Barcode</strong> if you want
+to render barcodes in your Pdfs) and click <strong>Add Packages</strong>.</p></li>
+<li><p>Click <strong>Accept</strong>.</p></li>
+</ol>
+<p>This will automatically add references of the package and its dependencies to
+your application. After this step, follow the steps in the <a href="http://help.grapecity.com/gcdocs/gcpdf/onlinehelp/GettingStarted.html#QS">Quick
+Start</a>
+section below.</p>
+<p>Visual Studio Code for Linux</p>
+<ol>
+<li><p>Open Visual Studio Code.</p></li>
+<li><p>Install <strong>Nuget Package Manager</strong> from <strong>Extensions</strong>.</p></li>
+<li><p>Create a folder &quot;MyApp&quot; in your <strong>Home</strong> folder.</p></li>
+<li><p>In the Terminal in Visual Studio Code, type &quot;<code>cd MyApp</code>&quot;</p></li>
+<li><p>Type command &quot;<code>dotnet new console</code>&quot;<br>
+<em>Observe</em>: This creates a .NETCore application with MyApp.csproj file and
+Program.cs.</p></li>
+<li><p>Press <strong>Ctrl+P</strong>. A command line opens at the top.</p></li>
+<li><p>Type command: &quot;<code>&gt;</code>&quot;<br>
+<em>Observe</em>: &quot;<strong>Nuget Package Manager: Add Package</strong>&quot; option appears.</p></li>
+<li><p>Click the above option.</p></li>
+<li><p>Type &quot;<strong>Grapecity</strong>&quot; and press Enter.<br>
+<em>Observe</em>: GrapeCity packages get displayed in the dropdown.</p></li>
+<li><p>Choose <strong>GrapeCity.Documents.Pdf</strong>.</p></li>
+<li><p>(Optional) Repeat above steps to add <strong>GrapeCity.Documents.Barcode</strong> if you
+want to add barcodes to your PDF.<br>
+<em>Observe</em>: The packages would be added to your .csproj file.</p></li>
+<li><p>Type following command in the Terminal window: &quot;<code>dotnet restore</code>&quot;</p></li>
+</ol>
+<p>This will add references of the package to your application. After this step,
+follow the steps in the <a href="http://help.grapecity.com/gcdocs/gcpdf/onlinehelp/GettingStarted.html#QS">Quick
+Start</a> section
+below.</p>
+<h3><a class="anchor" aria-hidden="true" id="quick-start"></a><a href="#quick-start" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Quick Start</h3>
+<p>This quick start helps you in getting started with the GcPdf library. It covers
+how to create a simple PDF document having a single page and draw string on it
+in a specified font using a .NET Core or .NET Standard application. Follow the
+steps below to get started:</p>
+<ol>
+<li><p><a href="http://help.grapecity.com/gcdocs/gcpdf/onlinehelp/GettingStarted.html#step1">Create a new PDF
+document</a></p></li>
+<li><p><a href="http://help.grapecity.com/gcdocs/gcpdf/onlinehelp/GettingStarted.html#step2">Draw a string on the PDF
+document</a></p></li>
+</ol>
+<p><img src="../website/static/img/helloworld_GcPdf.png" alt=""></p>
+<h3><a class="anchor" aria-hidden="true" id="step-1-create-a-new-pdf-document"></a><a href="#step-1-create-a-new-pdf-document" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Create a new PDF document</h3>
+<ol>
+<li><p>Create a new application (.NET Core Console App\Windows Forms App) and add
+the references.</p></li>
+<li><p>Include the following namespaces</p>
+<ul>
+<li><p>using GrapeCity.Documents.Pdf;</p></li>
+<li><p>using GrapeCity.Documents.Text;</p></li>
+</ul></li>
+<li><p>Create a new PDF document using an instance
+of <a href="http://help.grapecity.com/gcdocs/gcpdf/onlinehelp/GrapeCity.Documents.Pdf~GrapeCity.Documents.Pdf.GcPdfDocument.html">GcPdfDocument</a>
+and define a text format for drawing a string, through code.</p></li>
+</ol>
+<blockquote>
+<p>C#</p>
+</blockquote>
+<pre><code class="hljs">// <span class="hljs-keyword">Create</span> a <span class="hljs-keyword">new</span> PDF <span class="hljs-keyword">document</span>: GcPdfDocument doc = <span class="hljs-keyword">new</span> GcPdfDocument(); 
+// Add a page, and get its Graphics object to draw on: 
+GcPdfGraphics g = doc.NewPage().Graphics; 
+// <span class="hljs-keyword">Create</span> a <span class="hljs-built_in">text</span> <span class="hljs-keyword">format</span> <span class="hljs-keyword">for</span> the <span class="hljs-string">"Hello World!"</span> <span class="hljs-keyword">string</span>: 
+TextFormat tf = <span class="hljs-keyword">new</span> TextFormat(); 
+// <span class="hljs-keyword">Use</span> standard Times font 
+tf.Font = StandardFonts.Times; 
+// Pick a font size: 
+tf.FontSize = 14;
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="step-2-draw-a-string-on-the-pdf-document"></a><a href="#step-2-draw-a-string-on-the-pdf-document" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2: Draw a string on the PDF document</h3>
+<ol>
+<li>Add the following code that
+uses <a href="http://help.grapecity.com/gcdocs/gcpdf/onlinehelp/GrapeCity.Documents.Common~GrapeCity.Documents.Drawing.GcGraphics~DrawString.html">DrawString</a>
+method
+of <a href="http://help.grapecity.com/gcdocs/gcpdf/onlinehelp/GrapeCity.Documents.Common~GrapeCity.Documents.Drawing.GcGraphics.html">GcGraphics</a>
+class to draw string.</li>
+</ol>
+<pre><code class="hljs">&gt;C#
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Draw the string at (1&quot;,1&quot;) from top/left of page 
+//(72 dpi is the default PDF graphics' resolution): 
+g.DrawString(&quot;Hello, World!&quot;, tf, new PointF(72, 72));
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+</code></pre>
+<ol start="2">
+<li>Save the PDF document using the following code.</li>
+</ol>
+<pre><code class="hljs">&gt;C#
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Save PDF document 
+doc.Save(&quot;filename.pdf&quot;);
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/gcdoctest/docs/KeyFeatures"><span class="arrow-prev">← </span><span>Previous</span></a><a class="docs-next button" href="/gcdoctest/docs/QuickStart"><span>Next</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav docOnPageNav"><ul class="toc-headings"><li><a href="#system-requirements">System requirements</a></li><li><a href="#setting-up-an-application">Setting up an application</a><ul class="toc-headings"><li><a href="#add-reference-to-gcpdf-in-your-application-from-nugetorg">Add reference to GcPdf in your application from NuGet.org</a></li><li><a href="#quick-start">Quick Start</a></li><li><a href="#step-1-create-a-new-pdf-document">Step 1: Create a new PDF document</a></li><li><a href="#step-2-draw-a-string-on-the-pdf-document">Step 2: Draw a string on the PDF document</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/gcdoctest/" class="nav-home"><img src="/gcdoctest/img/docusaurus.svg" alt="Documents for Excel, .NET Edition" width="66" height="58"/></a><div><h5>Docs</h5><a href="/gcdoctest/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/gcdoctest/docs/en/doc2.html">Guides (or other categories)</a><a href="/gcdoctest/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/gcdoctest/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/gcdoctest/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/gcdoctest/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2018 GrapeCity, Inc. All Rights Reserved.</section></footer></div></body></html>

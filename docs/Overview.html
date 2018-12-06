@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Overview · Documents for Excel, .NET Edition</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="========"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Overview · Documents for Excel, .NET Edition"/><meta property="og:type" content="website"/><meta property="og:url" content="https://your-docusaurus-test-site.com/gcdoctest/index.html"/><meta property="og:description" content="========"/><meta property="og:image" content="https://your-docusaurus-test-site.com/gcdoctest/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="custom" content="this is custom tag"/><meta name="custom tag number type" content="45"/><meta name="twitter:image" content="https://your-docusaurus-test-site.com/gcdoctest/img/docusaurus.png"/><link rel="shortcut icon" href="/gcdoctest/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://your-docusaurus-test-site.com/gcdoctest/blog/atom.xml" title="Documents for Excel, .NET Edition Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://your-docusaurus-test-site.com/gcdoctest/blog/feed.xml" title="Documents for Excel, .NET Edition Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="/gcdoctest/js/bcrumb.js"></script><script type="text/javascript" src="/gcdoctest/js/linksModifier.js"></script><link rel="stylesheet" href="/gcdoctest/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/gcdoctest/"><img class="logo" src="/gcdoctest/img/docusaurus.svg" alt="Documents for Excel, .NET Edition"/><h2 class="headerTitleWithLogo">Documents for Excel, .NET Edition</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive siteNavItemActive"><a href="/gcdoctest/docs/Overview" target="_self">Docs</a></li><li class=""><a href="https://dinoreborn.github.io/docfxsamplerepo/api/" target="_self">API</a></li><li class=""><a href="/gcdoctest/help" target="_self">Help</a></li><li class=""><a href="/gcdoctest/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>GCPDF Overview</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">GCPDF Overview</h3><ul><li class="navListItem navListItemActive"><a class="navItem" href="/gcdoctest/docs/Overview">Overview</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Key Features</h3><ul><li class="navListItem"><a class="navItem" href="/gcdoctest/docs/KeyFeatures">KeyFeatures</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting Started</h3><ul><li class="navListItem"><a class="navItem" href="/gcdoctest/docs/GettingStarted">Getting Started</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">My Example Subcategory</h4><ul><li class="navListItem"><a class="navItem" href="/gcdoctest/docs/QuickStart">Quick Start</a></li></ul></div><li class="navListItem"><a class="navItem" href="/gcdoctest/docs/LicenseInformation">License Information</a></li><li class="navListItem"><a class="navItem" href="/gcdoctest/docs/Upgrade">Upgrade</a></li><li class="navListItem"><a class="navItem" href="/gcdoctest/docs/Annotations">Annotations</a></li><li class="navListItem"><a class="navItem" href="/gcdoctest/docs/Document">Document</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docMainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/dinoreborn/gcdoctest/tree/master/docs/Overview.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">Overview</h1></header><article><div><span><p>========</p>
+<p><strong>GrapeCity Documents</strong> is a cross-platform solution for document management
+which aims to provide a universal document, editor and viewer solution for all
+popular document formats.</p>
+<p><strong>GrapeCity Documents for PDF</strong> library, referred to as <strong>GcPdf</strong>, is a part of
+GrapeCity Documents that handles majority of the PDF related needs as it
+conforms to a large part of <a href="https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf">Adobe PDF specification
+1.7</a>.
+The extensive library supported on .NET Standard 2.0, can be used to read,
+create, modify and save PDF files without using any external tool like Adobe
+Acrobat. It offers a rich feature set that allows developers to create PDF files
+with advanced font support and features, images, graphics, barcode, annotations,
+outlines, stamps, watermark and more. It also allows the developers to make
+changes at the document level; for example, working with document properties,
+page size, orientation, security and signatures, file compression, generating
+linearized PDF document are few to mention. Moreover, all these features are
+fully supported on Windows, Linux, and MAC systems.</p>
+<p>In addition, GcPdf provides full text support in .NET Standard 2.0, despite the
+fact that major classes related to text and image are missing in .NET Core. This
+makes it a cross-platform solution for many developers looking for a PDF library
+to generate PDF files for multi-device applications.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-next button" href="/gcdoctest/docs/KeyFeatures"><span>Next</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav docOnPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/gcdoctest/" class="nav-home"><img src="/gcdoctest/img/docusaurus.svg" alt="Documents for Excel, .NET Edition" width="66" height="58"/></a><div><h5>Docs</h5><a href="/gcdoctest/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/gcdoctest/docs/en/doc2.html">Guides (or other categories)</a><a href="/gcdoctest/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/gcdoctest/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/gcdoctest/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/gcdoctest/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2018 GrapeCity, Inc. All Rights Reserved.</section></footer></div></body></html>
