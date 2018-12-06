@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/iwannabebot/gcdoctest#readme",
   "devDependencies": {
-    "gh-pages": "^1.2.0"
+    "gh-pages": "^1.2.0",
+    "rimraf": "^2.6.2"
   }
 }
