@@ -9,10 +9,12 @@
   "scripts": {
     "version": "docusaurus-version",
     "rename-version": "docusaurus-rename-version",
+    "preinstall": "npm run clean",
     "postinstall": "cd website && npm install",
     "start": "cd website && npm run start",
     "build": "cd website && npm run build ",
-    "publish": "gh-pages -d website/build/test-site"
+    "publish": "gh-pages -d website/build/test-site",
+    "clean": "rimraf ./node_modules && rimraf ./website/node_modules && rimraf ./website/build"
   },
   "repository": {
     "type": "git",
