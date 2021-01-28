@@ -16,7 +16,7 @@ GcPdf provides Metadata property which allows you to get the metadata associated
 GcPdf contains OpenAction method which provides a value specifying an action that should be performed when a document is opened.
 #### Pdf Version
 GcPdf allows you to set the PDF version of the selected document using PdfVersion property. Although, the version of the document is determined automatically but it can be set explicitly.
-#### Viewer Preferences
+#### Viewer Preferences Type
 GcPdf provides ViewerPreferences property to specify how a document should be displayed on opening in a viewer. This property allows you to set the predominant reading order for text, set the number of copies to be printed when the print dialog is opened for this file, and more preferences.
 
 ## Get Document Properties
